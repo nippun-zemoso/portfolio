@@ -1,0 +1,738 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* Assuming Roboto is loaded */
+}
+
+/* Navbar styles */
+.Navbar {
+  width: 100%;
+  height: 120px;
+  background: white;
+  box-shadow: 0 5.33px 80px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.Navbar .Container {
+  display: flex;
+  align-items: center;
+  gap: 42.67px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 85.33px;
+  margin: 0 auto; /* Center the container */
+}
+
+.Navbar .Logo {
+  width: 186.67px;
+  height: 40px;
+  position: relative;
+}
+
+.Navbar .Logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Navbar .Column {
+  flex: 1 1 0;
+  height: 36px;
+}
+
+.Navbar .NavLinks {
+  display: flex;
+  gap: 42.67px;
+}
+
+.Navbar .Button {
+  height: 69.33px;
+  padding: 0px 42.67px;
+  border-radius: 5.33px;
+  border: 1.33px #5e3bee solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Styles for individual navigation items */
+.Navbar .Home,
+.Navbar .Portfolio,
+.Navbar .AboutUs,
+.Navbar .Skills,
+.Navbar .ContactMe {
+  color: #1c1e53;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.Navbar .Home {
+  color: #5e3bee;
+  /* Highlighted link color */
+}
+
+/* Header styles */
+.Header {
+  width: 100%;
+  position: relative; /* Adjusted to relative */
+  top: 120px;
+  left: 0;
+  background: #f5fcff;
+  display: flex;
+  justify-content: center; /* Adjusted to center */
+  align-items: flex-start;
+  flex-direction: column; /* Adjusted to column */
+  padding: 80px 20px; /* Adjusted padding */
+}
+
+.Header .Container {
+  width: 100%;
+  display: flex;
+  gap: 60px; /* Adjust gap between sections */
+}
+
+.Header .HeaderLeft {
+  width: 100%;
+  max-width: 800px; /* Adjusted max-width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Adjusted to center */
+  align-items: flex-start; /* Adjusted to center */
+  gap: 32px;
+  padding: 0px 80px; /* Adjusted padding */
+}
+
+.Header .title {
+  text-align: left;
+  color: #282938;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.Header .intro {
+  text-align: left; /* Adjusted to center */
+  max-width: 600px; /* Adjusted max-width */
+}
+
+.Header .intro span.ProductDesign {
+  color: #5e3bee;
+}
+
+.Header .header-text {
+  color: #1c1e53;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left; /* Adjusted to center */
+}
+
+.Header .Actions {
+  padding-top: 21.33px;
+  display: flex;
+  justify-content: center; /* Adjusted to center */
+  align-items: left; /* Adjusted to center */
+  gap: 21.33px;
+}
+
+.Header .Button {
+  height: 50px; /* Adjusted height for responsiveness */
+  padding: 0 24px; /* Adjusted padding */
+  background: #5e3bee;
+  border-radius: 5.33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10.67px;
+}
+
+.Header .GetInTouch {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* MySkill section styles */
+.MySkill {
+  position: relative; /* Ensure positioning context */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: flex-start; /* Center horizontally */
+  gap: 106.67px; /* Adjust gap between sections */
+  padding: 149.33px 85.33px; /* Adjust padding */
+}
+
+.MySkill .MySkills {
+  color: #282938;
+  font-size: 21.33px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 32px;
+  word-wrap: break-word
+    "
+}
+
+.MySkill .MyExpertise {
+    align-self: stretch; 
+    color: #282938; 
+    font-size: 64px; 
+    font-family: Roboto; 
+    font-weight: 700; 
+    line-height: 76.80px; 
+    word-wrap: break-word";
+}
+.MySkill .SectionTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: flex-start; /* Center horizontally */
+  gap: 21.33px; /* Adjust gap between title and content */
+}
+
+.MySkill .Row {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items to the start */
+  gap: 42.67px; /* Adjust gap between columns */
+}
+
+.MySkill .Content {
+  flex: 1 1 0;
+  /* padding: 32px; Adjust padding */
+  /* background: #F5FCFF; */
+  border-radius: 10.67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px; /* Adjust gap between sections */
+}
+
+.MySkill .Section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* Adjust gap between sections */
+}
+
+/* Styles for individual sections */
+.MySkill .StrategyDirection,
+.MySkill .BrandingLogo,
+.MySkill .UiUxDesign,
+.MySkill .WebflowDevelopment {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 13.33px;
+  background: white;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10.67px;
+  gap: 13.33px; /* Adjust gap between elements */
+}
+
+.MySkill .SkillTitle {
+  color: #282938;
+  font-size: 32px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 44.8px;
+  word-wrap: break-word;
+}
+
+.MySkill .SkillDescription {
+  color: #1c1e53;
+  font-size: 21.33px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+}
+
+.MySkill .Content .Section {
+  flex: 1 1 0;
+  padding: 20px;
+  background-color: #f5fcff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust gap between sections */
+}
+
+.MySkill .Section .StrategyDirection,
+.MySkill .Section .BrandingLogo,
+.MySkill .Section .UiUxDesign,
+.MySkill .Section .WebflowDevelopment {
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.MySkill .SkillTitle {
+  color: #282938;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  /* text-align: center;   */
+}
+
+.MySkill .SkillDescription {
+  color: #1c1e53;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  /* text-align: center; */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1200px) {
+  .Row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Content .Section {
+    width: 100%;
+    max-width: 600px; /* Adjust max-width of each section */
+  }
+
+  .Button {
+    height: 50px; /* Adjusted height for responsiveness */
+    padding: 0 24px; /* Adjusted padding */
+  }
+
+  .Column {
+    flex: 1 1 0;
+    height: 32px; /* Adjusted height for responsiveness */
+  }
+}
+
+.MyPortfolio {
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  left: 0px;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  display: inline-flex;
+}
+
+.MyPortfolio .SectionHeader {
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+
+.MyPortfolio .SectionTitle {
+  width: 1024px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 21.33px;
+  display: inline-flex;
+}
+
+.MyPortfolio .RecentProjects {
+  text-align: center;
+  color: #282938;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.MyPortfolio .Content {
+  align-self: stretch;
+  /* height: 77px; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  display: flex;
+}
+
+.MyPortfolio .MyPortfolios {
+  align-self: stretch;
+  color: #282938;
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 57.6px;
+  word-wrap: break-word;
+}
+
+.MyPortfolio .SocialButton {
+  width: 251.67px;
+  padding-left: 21.33px;
+  padding-right: 21.33px;
+  padding-top: 13.33px;
+  padding-bottom: 13.33px;
+  background: #e62872;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 10.67px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.MyPortfolio .SocialIcon {
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.MyPortfolio .Vector {
+  width: 32px;
+  height: 32px;
+  background: white;
+}
+
+.MyPortfolio .Text {
+  color: white;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.MyPortfolio .Row {
+  width: 1749.33px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 42.67px;
+  display: inline-flex;
+}
+
+.MyPortfolio .Card {
+  flex: 1 1 0;
+  background: white;
+  box-shadow: 0px 5.33333px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.MyPortfolio .PlaceholderImage {
+  align-self: stretch;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.MyPortfolio .Card .Content {
+  align-self: stretch;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  display: flex;
+}
+
+.MyPortfolio .Title {
+  align-self: stretch;
+  height: 119.67px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10.67px;
+  display: flex;
+}
+
+.MyPortfolio .BlogTitleHeadingWillGoHere {
+  align-self: stretch;
+  color: #282938;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 33.6px;
+  word-wrap: break-word;
+}
+
+.MyPortfolio .description {
+  align-self: stretch;
+  color: #1c1e53;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.MyPortfolio .Avatar {
+  padding-bottom: 10.67px;
+  border-bottom: 1.33px #5e3bee solid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 21.33px;
+  display: inline-flex;
+}
+
+.MyPortfolio .ViewInDribbble {
+  color: black;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.Footer {
+  padding-left: 85.33px;
+  padding-right: 85.33px;
+  padding-top: 106.67px;
+  padding-bottom: 106.67px;
+  left: 0px;
+  position: relative;
+  background: #f5fcff;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 106.67px;
+  display: inline-flex;
+}
+
+.Footer .Content {
+  width: 1749.33px;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+
+.Footer .Frame {
+  width: 300px;
+  height: 40px;
+  position: relative;
+}
+
+.Footer .Frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Footer .Links {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 42.67px;
+  display: flex;
+}
+
+.Footer .Links div {
+  color: black;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.Footer .SocialLinks {
+  height: 32px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.Footer .SocialLinks .Facebook,
+.Footer .SocialLinks .Instagram,
+.Footer .SocialLinks .Twitter,
+.Footer .SocialLinks .Linkedin {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 5.33px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.Footer .SocialLinks .Facebook img,
+.Footer .SocialLinks .Instagram img,
+.Footer .SocialLinks .Twitter img,
+.Footer .SocialLinks .Linkedin img {
+  width: 24px;
+  height: 24px;
+}
+
+.Footer .Credits {
+  align-self: stretch;
+  height: 72px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 42.67px;
+  display: flex;
+}
+
+.Footer .Divider {
+  align-self: stretch;
+  height: 1.33px;
+  background: rgba(40.36, 41.09, 56.31, 0.55);
+}
+
+.Footer .Row {
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+}
+
+.Footer .FooterLinks {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  display: flex;
+}
+
+.Footer .FooterLinks div {
+  color: black;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+/* Contact Me */
+.contact-section {
+  padding: 150px 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.contact-section .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 21px; */
+}
+
+.contact-section .get-in-touch {
+  text-align: center;
+  color: #282938;
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.contact-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 32px; */
+}
+
+.contact-section .contact-me {
+  text-align: center;
+  color: #282938;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.contact-section .description {
+  text-align: center;
+  color: #1c1e53;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.contact-section .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-section .form-row {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+.contact-section .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  width: 100%;
+}
+
+.contact-section label {
+  color: #282938;
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.contact-section input,
+select,
+textarea {
+  padding: 16px;
+  border: 1.3px solid #5e3bee;
+  border-radius: 8px;
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+.contact-section input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.contact-section textarea {
+  resize: vertical;
+}
+
+.contact-section .submit-button {
+  padding: 19px 43px;
+  background: #5e3bee;
+  color: white;
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.contact-section .submit-button:hover {
+  background: #4a30c1;
+}
